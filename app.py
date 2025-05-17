@@ -184,3 +184,7 @@ def nova_partida():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+# ISSO AQUI É O PONTO DE ENTRADA:
+application = app 
