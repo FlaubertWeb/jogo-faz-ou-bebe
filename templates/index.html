@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Jogo</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importando o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+<link href="/static/style.css" rel="stylesheet">
+
+    <style>
+        /* Estilo adicional para realçar a seleção */
+        .form-check-input:checked + .form-check-label {
+            font-weight: bold;
+            color: #0d6efd;
+        }
+
+    </style>
+</head>
+<body class="dark"> 
+
+<div class="container mt-5">
+    <div class="container-box anim-rotate-y">
+        <h1 class="text-center mb-4 title anim-float">Faz ou Bebe</h1>
+<hr>
+    <h2 class="text-center mb-4 title anim-float">Cadastro de Jogadores</h2>
+    
+    <!-- Exibe a lista de jogadores -->
+    <ul class="list-group mb-3">
+        {% for jogador in jogadores %}
+            <li class="list-group-item anim-fade-up">{{ jogador }}</li>
+        {% endfor %}
+    </ul>  
+    
+    <form method="POST" class="mb-3">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome do Jogador:</label>
+            <input type="text" name="nome" id="nome" class="form-control">
+        </div>
+     
+        <div class="d-flex">
+            <button type="submit" name="acao" value="adicionar" class="btn me-2 w-50 addPlayer ">
+             Adicionar Jogador
+            </button>
+     
+            <button type="submit" name="acao" value="limpar" class="btn  w-50 clearPlayer">
+                Limpar Jogadores
+            </button>
+        </div>
+    </form> 
+    
+    
+ 
+    <h2 class="mb-3 text-center title anim-float">Tipo de Jogo</h2>
+
+    {% if categorias %}
+        <!-- Formulário para selecionar categoria (com autosubmit) -->
+        <form method="POST" id="formCategoria" class="mb-3">
+            {% for categoria in categorias %}
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="categoria" 
+                           value="{{ categoria }}" id="categoria_{{ categoria }}" 
+                           {% if categoria == categoria_selecionada %}checked{% endif %}
+                           onchange="document.getElementById('formCategoria').submit()">
+                    <label class="form-check-label" for="categoria_{{ categoria }}">
+                        {{ categoria }}
+                    </label>
+                </div>
+            {% endfor %}
+        </form>
+
+        {% if categoria_selecionada %}
+            <!-- Formulário para iniciar o jogo -->
+            <form method="POST" action="{{ url_for('iniciar') }}" class="mb-3">
+                <button type="submit" class="btn start w-100">Iniciar Jogo</button>
+            </form> 
+        {% endif %}
+
+    {% else %}
+        <p class="text-muted">Não há categorias disponíveis. Adicione categorias para jogar.</p>
+    {% endif %}
+</div>
+</div>
+<!-- Importando o script do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

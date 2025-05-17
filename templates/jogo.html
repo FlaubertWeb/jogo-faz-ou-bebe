@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo - Sorteio</title>
+    <!-- Importando o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
+   
+</head>
+<body class="dark">
+
+<div class="container mt-5">
+    <div class="container-box anim-rotate-y">
+        <h1 class="text-center mb-4 title anim-float">Faz ou Bebe</h1>
+        <hr>
+    
+    <!-- Exibe o jogador sorteado -->
+  
+       
+    <!-- Exibe a lista de jogadores -->
+    <ul class="list-group mb-3">      
+            <li class="list-group-item anim-fade-up"><strong>Jogador Sorteado:</strong> {{ jogador }}</li>  
+            <li class="list-group-item anim-fade-up"><strong>Tipo de Partida:</strong> {{ categoria }}</li>    
+            <li class="list-group-item anim-fade-up"><strong>Desafio:</strong> {{ prenda['descricao'] }}</li>   
+
+    </ul>  
+    
+
+
+
+
+
+    <!-- Exibe a quantidade de shots a serem bebidos caso a prenda seja recusada -->
+    {% if shots > 0 %}
+        <div class="card-box">
+            <p>Se recusar a prenda, beba {{ shots }} shots!</p>
+        </div>
+    {% endif %}
+
+    <!-- Botões para continuar ou nova partida -->
+    <div class="d-flex btn-group">
+
+      <!-- Botão "Continuar Partida" -->
+      <form method="POST" action="{{ url_for('jogo') }}" class="w-50 ms-1">
+        <button type="submit" name="continuar" class="btn btn-custom w-100 start">Continuar Partida</button>
+    </form>
+
+
+
+        <!-- Botão "Nova Partida" -->
+        <form method="POST" action="{{ url_for('nova_partida') }}" class="w-50 me-1">
+            <button type="submit" class="btn btn-custom w-100 clearPlayer">Nova Partida</button>
+        </form>
+    </div>
+  
+    
+</div>
+</div>
+<!-- Importando o script do Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

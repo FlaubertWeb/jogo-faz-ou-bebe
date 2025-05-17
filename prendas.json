@@ -1,0 +1,202 @@
+[
+    {
+        "descricao": "Diga uma qualidade sobre cada pessoa da roda",
+        "categoria": "Light",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Faça uma dancinha de TikTok",
+        "categoria": "Light",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Conte uma história engraçada sua",
+        "categoria": "Light",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Diga seu crush da escola ou faculdade",
+        "categoria": "Light",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Fale uma verdade sobre a pessoa à sua esquerda",
+        "categoria": "Light",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Mostre a última foto que tirou no celular",
+        "categoria": "Light",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Mostre o histórico do YouTube",
+        "categoria": "Light",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Tente fazer uma cantada engraçada em alguém",
+        "categoria": "Light",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Diga uma mentira sobre você e faça os outros adivinharem",
+        "categoria": "Light",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Cante uma música por 30 segundos",
+        "categoria": "Light",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Conte sobre seu último date (se teve)",
+        "categoria": "Solteiros",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Mande um emoji aleatório para um ex",
+        "categoria": "Solteiros",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Ligue para alguém e diga que está com saudades",
+        "categoria": "Solteiros",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Escolha alguém da roda e dê um elogio sincero",
+        "categoria": "Solteiros",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Conte um perrengue de relacionamento",
+        "categoria": "Solteiros",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Recrie uma cena de filme romântico com alguém da roda",
+        "categoria": "Solteiros",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Descreva seu 'crush ideal' em 3 características",
+        "categoria": "Solteiros",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Leia a última conversa no Tinder (ou app de namoro)",
+        "categoria": "Solteiros",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Imite o jeito que você paquera alguém",
+        "categoria": "Solteiros",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Mostre uma selfie sexy sua",
+        "categoria": "Solteiros",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Beije alguém no rosto",
+        "categoria": "Picante",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Mostre uma parte do seu corpo que você mais gosta",
+        "categoria": "Picante",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Descreva seu beijo ideal",
+        "categoria": "Picante",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Simule uma cena de ciúmes com alguém da roda",
+        "categoria": "Picante",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Dê um abraço demorado em alguém",
+        "categoria": "Picante",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Sussurre algo picante no ouvido de alguém",
+        "categoria": "Picante",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Mostre uma mensagem quente do seu celular (se tiver)",
+        "categoria": "Picante",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Escolha alguém para te dar um apelido sexy",
+        "categoria": "Picante",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Beije a mão de alguém da roda",
+        "categoria": "Picante",
+        "doses_se_recusar": 1
+    },
+    {
+        "descricao": "Fale sua posição favorita (sem dizer o nome)",
+        "categoria": "Picante",
+        "doses_se_recusar": 3
+    },
+    {
+        "descricao": "Envie uma mensagem de 'tô com saudade' para um ex",
+        "categoria": "Extremo",
+        "doses_se_recusar": 3
+    },
+    {
+        "descricao": "Conte seu maior segredo sexual",
+        "categoria": "Extremo",
+        "doses_se_recusar": 3
+    },
+    {
+        "descricao": "Mostre sua galeria de fotos por 10 segundos para alguém",
+        "categoria": "Extremo",
+        "doses_se_recusar": 3
+    },
+    {
+        "descricao": "Deixe alguém da roda escolher uma parte do seu corpo para beijar",
+        "categoria": "Extremo",
+        "doses_se_recusar": 3
+    },
+    {
+        "descricao": "Faça uma dança sensual para alguém",
+        "categoria": "Extremo",
+        "doses_se_recusar": 3
+    },
+    {
+        "descricao": "Tire uma peça de roupa (exceto roupa íntima)",
+        "categoria": "Extremo",
+        "doses_se_recusar": 3
+    },
+    {
+        "descricao": "Fale sobre sua última fantasia",
+        "categoria": "Extremo",
+        "doses_se_recusar": 3
+    },
+    {
+        "descricao": "Simule um beijo com alguém usando a mão",
+        "categoria": "Extremo",
+        "doses_se_recusar": 2
+    },
+    {
+        "descricao": "Mostre algo íntimo no celular (como nome de um contato ou nota)",
+        "categoria": "Extremo",
+        "doses_se_recusar": 3
+    },
+    {
+        "descricao": "Fique no colo de alguém por 1 minuto",
+        "categoria": "Extremo",
+        "doses_se_recusar": 2
+    }
+] 

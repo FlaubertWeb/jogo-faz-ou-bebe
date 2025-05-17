@@ -1,0 +1,119 @@
+.title {
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+   
+
+  body.dark {
+    background: #211e1e;
+    color: #fff;
+}
+
+.title {
+    font-size: 20px;
+    text-shadow: 0 0  5px #000;
+}
+
+.container-box {
+    width: 450px;
+    max-width: 100%;
+    background: #0c0b0b;
+    padding: 10px;
+    border-radius: 19px;
+    margin: 0 auto;
+}
+
+.dark .list-group-item {
+    background: #211e1e;
+    color: #f1f1f1;
+    border-color: #161414;
+}
+.addPlayer {
+    background: #30456b;
+    color: #f1f1f1;
+}
+
+.clearPlayer {
+    background: #6b3030;
+    color: #f1f1f1;
+}
+
+.container-box.anim-rotate-y {
+    border: 10px solid #f1f1f1;
+    box-shadow: 0 0 5px #000;
+}
+
+h1.text-center.mb-4.title.anim-float {
+    color: #6b3030;
+    font-size: 30px;
+}
+.start {
+    background: #306b48;
+    color: #fff;
+}
+
+h1.text-center.mb-4.title.anim-float {
+    margin: 0!important;
+    padding: 0;
+}
+
+.addPlayer:hover, .clearPlayer:active, .clearPlayer:focus {
+    background-color: #3d5d97;
+}
+
+.clearPlayer:hover, .clearPlayer:active, .clearPlayer:focus {
+    background-color: #914040;
+}
+
+.start:hover, .start:active, .start:focus {
+    background-color: #429162;
+}
+ 
+.d-flex.btn-group form {
+    padding: 5px;
+}
+
+/* Flutuar suavemente */
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-2px);
+    }
+  }
+  .anim-float {
+    animation: float 2s ease-in-out infinite;
+  }
+  
+  /* Rotação no eixo Y */
+  @keyframes rotateY {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  .anim-rotate-y {
+    animation: rotateY 0.5s linear;
+    transform-style: preserve-3d;
+  }
+  
+  /* Fade In Up */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .anim-fade-up {
+    opacity: 0;
+    animation: fadeInUp 2s ease-out forwards;
+  }
+  
